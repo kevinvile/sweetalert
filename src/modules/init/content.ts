@@ -35,7 +35,8 @@ const addInputEvents = (input: HTMLElement): void => {
    */
   setTimeout(() => {
     input.focus();
-    setActionValue('');
+	const defaultValue = (input as HTMLInputElement).value;
+    setActionValue(defaultValue)
   }, 0);
 
 };
